@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2023 aas-core3.0-cli-swiss-knife AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 <#
 .SYNOPSIS
 This script publishes the binaries and zips them into an archive.

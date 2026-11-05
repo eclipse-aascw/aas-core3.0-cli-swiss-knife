@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2023 aas-core3.0-cli-swiss-knife AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 """Generate a verifier transformer which keeps track of JSON paths."""
 import io
 import os
@@ -235,6 +239,7 @@ public class PassThruVerifierWithJsonPaths
 def _generate(symbol_table: intermediate.SymbolTable) -> str:
     """Generate the C# code of the pass-thru verifier based on the meta-model."""
     blocks = [
+        aas_core3_0_sk_codegen.common.LICENSE_HEADER,
         aas_core3_0_sk_codegen.common.WARNING,
         Stripped(
             """\

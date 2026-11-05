@@ -1,0 +1,35 @@
+# SPDX-FileCopyrightText: 2023 aas-core3.0-cli-swiss-knife AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
+version = 1
+
+# Prose and metadata where a header would end up in the rendered output
+# (e.g., README shown on GitHub) or which can not carry a comment (e.g., JSON).
+[[annotations]]
+path = ["AUTHORS", "README.md", "src/.config/dotnet-tools.json"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 aas-core3.0-cli-swiss-knife AUTHORS"
+SPDX-License-Identifier = "MIT"
+
+# IDE settings and the solution files are managed by the IDE (Visual Studio,
+# Rider, PyCharm), which would drop or move a header on the next save.
+[[annotations]]
+path = [
+    ".idea/**",
+    "src/.idea/**",
+    "src/AasCore3_0CliSwissKnife.sln",
+    "src/AasCore3_0CliSwissKnife.sln.DotSettings",
+    "src/AasCore3_0CliSwissKnife.sln.DotSettings.user",
+]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 aas-core3.0-cli-swiss-knife AUTHORS"
+SPDX-License-Identifier = "MIT"
+
+# Test data and the recorded test outputs are compared byte-by-byte,
+# and JSON can not carry a comment.
+[[annotations]]
+path = "test_data/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2023 aas-core3.0-cli-swiss-knife AUTHORS"
+SPDX-License-Identifier = "MIT"

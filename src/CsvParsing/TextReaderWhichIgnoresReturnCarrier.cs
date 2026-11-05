@@ -1,4 +1,8 @@
-﻿namespace CsvParsing
+﻿// SPDX-FileCopyrightText: 2023 aas-core3.0-cli-swiss-knife AUTHORS
+//
+// SPDX-License-Identifier: MIT
+
+namespace CsvParsing
 {
     internal class TextReaderWhichIgnoresReturnCarrier : System.IO.TextReader
     {

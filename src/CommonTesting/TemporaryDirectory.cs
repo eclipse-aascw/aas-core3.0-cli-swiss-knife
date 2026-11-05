@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2023 aas-core3.0-cli-swiss-knife AUTHORS
+//
+// SPDX-License-Identifier: MIT
+
 using IDisposable = System.IDisposable;
 
 namespace CommonTesting

@@ -1,4 +1,8 @@
-﻿using System.Collections.Generic;  // can't alias
+﻿// SPDX-FileCopyrightText: 2023 aas-core3.0-cli-swiss-knife AUTHORS
+//
+// SPDX-License-Identifier: MIT
+
+using System.Collections.Generic;  // can't alias
 using NUnit.Framework; // can't alias
 
 namespace CsvParsing.Tests

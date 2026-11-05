@@ -1,3 +1,7 @@
+// SPDX-FileCopyrightText: 2023 aas-core3.0-cli-swiss-knife AUTHORS
+//
+// SPDX-License-Identifier: MIT
+
 using Aas = AasCore.Aas3_0; // renamed
 
 // ReSharper disable RedundantUsingDirective

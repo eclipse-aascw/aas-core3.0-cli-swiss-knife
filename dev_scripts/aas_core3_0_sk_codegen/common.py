@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2023 aas-core3.0-cli-swiss-knife AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 """Provide common functions and definitions for the codegen module."""
 from aas_core_codegen.common import Stripped
 
@@ -9,3 +13,17 @@ WARNING = Stripped(
  * Do NOT edit or append.
  */"""
 )
+
+# NOTE (aaronzi, 2026-11-05):
+# The generated C# files carry the same copyright and license header as the rest
+# of the repository. We prepend it on generation so that the header is not lost on
+# every re-generation.
+#
+# REUSE-IgnoreStart
+LICENSE_HEADER = Stripped(
+    """\
+// SPDX-FileCopyrightText: 2023 aas-core3.0-cli-swiss-knife AUTHORS
+//
+// SPDX-License-Identifier: MIT"""
+)
+# REUSE-IgnoreEnd
