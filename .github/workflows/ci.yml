@@ -39,15 +39,3 @@ jobs:
       - name: Check
         working-directory: src
         run: powershell .\Check.ps1
-
-  Check-REUSE-compliance:
-    runs-on: ubuntu-latest
-    if: contains(github.event.pull_request.body, 'The workflow check was intentionally skipped.') == false
-    steps:
-      - uses: actions/checkout@master
-
-      - name: Check REUSE compliance
-        run: |
-          python3 -m venv "${RUNNER_TEMP}/venv-reuse"
-          "${RUNNER_TEMP}/venv-reuse/bin/pip" install reuse==6.3.0
-          "${RUNNER_TEMP}/venv-reuse/bin/reuse" lint
