@@ -1,3 +1,7 @@
+# SPDX-FileCopyrightText: 2023 aas-core3.0-cli-swiss-knife AUTHORS
+#
+# SPDX-License-Identifier: MIT
+
 import io
 import os
 import pathlib
@@ -117,6 +121,7 @@ def _generate(symbol_table: intermediate.SymbolTable) -> Stripped:
     code = _generate_mapping_function(symbol_table)
 
     blocks = [
+        aas_core3_0_sk_codegen.common.LICENSE_HEADER,
         aas_core3_0_sk_codegen.common.WARNING,
         Stripped(
             f"""\
